@@ -24,8 +24,7 @@ El calor no llega al sensor de inmediato: se propaga con retardo, y ese retardo 
 3. **Diseño del compensador:** se diseña un compensador $C(s)$ (PID o de adelanto-atraso de fase, a definir) para mejorar la respuesta y cumplir las especificaciones.
 4. **Resultados y conclusiones:** se comparan las respuestas con y sin compensador.
 
-![[Pasted image 20261031152533.png]]
-![Diagrama de bloques](./images/image 20261031152533.png)
+![Diagrama de bloques](./images/Pasted%20image%2020261031152533.png)
 
 ## Modelo matemático
 
@@ -118,24 +117,20 @@ $$kA\,\lambda\,C=\frac{Q(s)}{2}\quad\Rightarrow\quad C=\frac{Q(s)}{2kA\lambda}$$
 
 Reemplazando $C$ y evaluando en $x=x_s$ se obtiene el $G(s)$ del modelo.
 
-
-
-
-
-
-## Graficos
+## Gráficos
 
 Diagrama de bloques
 
-![[Pasted image 20261031154456.png]]
+![Diagrama de bloques del lazo cerrado](./images/Pasted%20image%2020261031154456.png)
 
-Grafico de numpy
+Gráfico de numpy
 
-![[Pasted image 20261031154546.png]]
+![Respuesta del lazo cerrado](./images/Pasted%20image%2020261031154546.png)
 
-Script de octave 
-(no hay inversa de laplace con funciones no racionales hay que usar metodos numericos)
-```
+Script de Octave
+(no hay inversa de Laplace con funciones no racionales, hay que usar métodos numéricos)
+
+```octave
 % lazo cerrado sin compensador, barra de aluminio
 pkg load symbolic
 1;
@@ -192,5 +187,4 @@ xlabel('t [s]'), ylabel('temperatura en el sensor [K]')
 title('Lazo cerrado sin compensador')
 legend('xs = 2 cm', 'xs = 4 cm', 'xs = 6 cm', 'referencia', 'location', 'southeast')
 axis([0 1000 0 11])
-
 ```
