@@ -75,7 +75,7 @@ $$\boxed{G(s)=\frac{\Theta(x_s,s)}{Q(s)}=\frac{e^{-x_s\sqrt{s/\alpha}}}{2kA\sqrt
 
 Para una potencia constante $Q$ aplicada en $t=0$ (escalón), la temperatura en el sensor en el tiempo es:
 
-$$\theta(x_s,t)=\frac{Q}{2kA}\left[2\sqrt{\frac{\alpha t}{\pi}}\;e^{-x_s^2/4\alpha t}-x_s\,\operatorname{erfc}\!\left(\frac{x_s}{2\sqrt{\alpha t}}\right)\right]$$
+$$\theta(x_s,t)=\frac{Q}{2kA}\left[2\sqrt{\frac{\alpha t}{\pi}}\;e^{-x_s^2/4\alpha t}-x_s\,\mathrm{erfc}\!\left(\frac{x_s}{2\sqrt{\alpha t}}\right)\right]$$
 
 ### Observaciones
 
