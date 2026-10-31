@@ -25,6 +25,7 @@ El calor no llega al sensor de inmediato: se propaga con retardo, y ese retardo 
 4. **Resultados y conclusiones:** se comparan las respuestas con y sin compensador.
 
 ![[Pasted image 20261031152533.png]]
+![Diagrama de bloques](./images/image 20261031152533.png)
 
 ## Modelo matemático
 
